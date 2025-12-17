@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     if (data && typeof data === 'object') {
       const responseData = {
         status: data.status,
-        operator: (settings.apiSettings && settings.apiSettings.operator) || "Created Using Rynn UI",
+        operator: (settings.apiSettings && settings.apiSettings.operator) || "Created Using NiSaN UI",
         ...data
       };
       return originalJson.call(this, responseData);
